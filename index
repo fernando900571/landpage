@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educacional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .gender-options {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+        .gender-options label {
+            margin-right: 15px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        select, textarea, input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .checkbox-item {
+            background-color: #f9f9f9;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .button-group {
+            margin: 15px 0;
+        }
+        .hidden {
+            display: none;
+        }
+        #savedFiles {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 4px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        /* Estilos adicionais para os menus dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-btn {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 5px;
+            min-width: 200px;
+            text-align: left;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+        }
+        
+        .dropdown-content a {
+            color: #2c3e50;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropdown-btn {
+            background-color: #2980b9;
+        }
+        
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .menu-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .login-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .login-link a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="menu-title">Portal Educacional</h1>
+        <p style="text-align: center;">Selecione a turma para acessar a turma</p>
+        
+        <div class="menu-container">
+            <!-- Educação Infantil -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Educação Infantil</button>
+                <div class="dropdown-content">
+                    <a href="Ing_Berçario.html">Berçário</a>
+                    <a href="Ing_Infantil2A.html">Infantil 2A</a>
+                    <a href="Ing_Infantil2B.html">Infantil 2B</a>
+                    <a href="Ing_Infantil3.html">Infantil 3</a>
+                    <a href="Ing_infantil4A.html">Infantil 4A</a>
+                    <a href="Ing_Infantil4B.html">Infantil 4B</a>
+                    <a href="Ing_Infantill5.html">Infantil 5</a>
+                </div>
+            </div>
+            
+            <!-- Ensino Fundamental I -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Ensino Fundamental I</button>
+                <div class="dropdown-content">
+                    <a href="Ing_index1ºEF.html">1° Ano EF</a>
+                    <a href="Ing_índice2ºEF.html">2° Ano EF</a>
+                    <a href="Ing_índice3ºEF.html">3° Ano EF</a>
+                    <a href="Ing_index4º.html">4° Ano EF</a>
+                    <a href="Ing_index5º.html">5° Ano EF</a>
+                </div>
+            </div>
+            
+            <!-- Ensino Fundamental II -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Ensino Fundamental II</button>
+                <div class="dropdown-content">
+                    <a href="Ing_index6º.html">6º Ano EF</a>
+                    <a href="Ing_index7º.html">7º Ano EF</a>
+                    <a href="Ing_index8º.html">8º Ano EF</a>
+                    <a href="Ing_index9ºEF.html">9º Ano EF</a>
+                </div>
+            </div>
+            
+            <!-- Ensino Médio -->
+            <div class="dropdown">
+                <button class="dropdown-btn">Ensino Médio</button>
+                <div class="dropdown-content">
+                    <a href="Ing_index1ºEM.html">1º Ano EM</a>
+                    <a href="Ing_index2ºEM.html">2º Ano EM</a>
+                    <a href="Ing_index3ºEM.html">3º Ano EM</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="login-link">
+            <p>Acesso restrito para professores:</p>
+            <a href="login.html">Clique aqui para fazer login</a>
+        </div>
+    </div>
+</body>
+</html>
